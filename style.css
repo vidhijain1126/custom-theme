@@ -462,3 +462,49 @@ p{
 	font-weight: bold;
 	border: 1px solid brown !important;
 }
+.avatar avatar-32,
+.photo{
+	margin: 2px 7px 2px 2px;
+	border-radius: 50%;
+}
+.comment-author, 
+.vcard{
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 5px;
+}
+.reply{
+	padding: 2px 12px;
+}
+.comment-reply-link,
+.submit{
+	padding: 5px;
+	border: 1px solid black;
+	background-color: rgba(255,192,203,0.9);
+	border-radius: 10px;
+	font-size: 12px;
+}
+.commentlist{
+	margin: 10px;
+}
+.comment-meta,
+.commentmetadata{
+	padding: 2px 15px;
+}
+.commentlist{
+	list-style: none;
+}
+.comment-respond{
+	margin: 1px auto;
+	background-color: #fff;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form-submit{
+	margin-left: 40%;
+}

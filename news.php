@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <? //Template Name: news ?>
+    <? //Template Name: news details ?>
 </head>
 <?php get_header()?>
    <body <? body_class() ?>>
@@ -60,7 +60,7 @@
                </div>
                <?php } ?>
             </div>
-
+            <div><? wp_pagenavi(array('query' =>$xyz)) ?></div>
             <div style="margin-left: 40%; background-color: white; width: 200px;border-radius: 7px;">
                <h2>Catogries</h2>
                <? $cat=get_categories(array('taxonomy' =>'news_category')); 
@@ -71,10 +71,6 @@
                <? }?>
             </div>
             
-            <div><? wp_pagenavi(array('query' =>$xyz)) ?></div>
-            
-       
-
             <div class="indxbtnholder">
                <button><a href="#" onclick="addStuForm()">Add new player</a></button>
                <button><a href="#" onclick="addCoachForm()">Add new couch</a></button>
