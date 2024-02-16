@@ -101,9 +101,14 @@ a{
 .menus ul li a:hover{
 color: brown;
 }
+.menus ul:hover,
 .current-menu-item a,
 .current_page_parent a {
 	color: brown;
+}
+.menus ul li:hover:first-child ul{
+	opacity: 1;
+	visibility: visible;
 }
 .sub-menu {
 	position: absolute;
@@ -116,7 +121,7 @@ color: brown;
 	color: white;
 	padding: 0px;
 	opacity: 0;
-	display: none;
+	visibility: hidden;
 }
 .sub-menu li{
 	width: 10px;
@@ -124,10 +129,7 @@ color: brown;
 .sub-menu li a{
 	color: white;
 }
-.sub-menu:hover{
-	opacity: 1;
-	display: flex;
-}
+
 .indxmain_contaner {
 margin-top: 40px;
 display: flex;

@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-  <? wp_footer(); ?>
-</head>
-<body>
   <div class="foot">
   <div class="foot1">
     <h2>Contact Info</h2>

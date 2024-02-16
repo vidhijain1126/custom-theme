@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <? //Template Name: news details ?>
 </head>
+<body <? //body_class() ?>> -->
 <?php get_header()?>
-   <body <? body_class() ?>>
+   
       <div class="contmain">
          <aside>
         
