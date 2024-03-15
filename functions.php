@@ -10,5 +10,5 @@ register_sidebar(
 );
 add_theme_support('custom-background');
 add_post_type_support('page','excerpt');
-second 
+second hiiiiiiiiigit 
 ?>
