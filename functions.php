@@ -4,10 +4,11 @@ add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
 register_sidebar(
 	array(
-		'name' => "sidebar location",
-		'id'=>'sidebar'
+		'name' => "sidebars location",
+		'id'=>'sidebarr'
 	)
 );
 add_theme_support('custom-background');
 add_post_type_support('page','excerpt');
+
 ?>
