@@ -1,15 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="<?php //echo get_template_directory_uri(); ?>/style.css">
-    <style>
-        p{
-            padding: 50px;
-        }
-    </style>
-</head>
-<body <? //body_class() ?>> -->
 <?php
 get_header();
 ?>
@@ -23,11 +11,33 @@ get_header();
     </aside>
     <div class="onlyp" style="margin: 10px; width: 80%;">
 <h2> <?php the_title() ?> </h2>
-<?php the_content() ?>
+<?php the_content();
+// $page_id = 7;
+
+// $page_content = get_post_field('post_content', $page_id);
+
+// preg_match_all('/<p.*?(.*?)<\/p>/i', $page_content, $paragraph_matches);
+// preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $page_content, $image_matches);
+
+// $paragraph_count = count($paragraph_matches[0]);
+// $image_count = count($image_matches[1]);
+
+// for ($i = 0; $i < max($paragraph_count, $image_count); $i++) {
+// foreach ($paragraph_matches[0] as $paragraph) {
+//     echo $paragraph . '<br>';
+//     // Display two images for each paragraph
+//     if ($image_count >= 2) {
+//         echo '<img src="' . esc_url($image_matches[1][$i]) . '" alt="Page Image" style="width: 300px; height: 300px; margin: 5px;">';
+//         echo '<img src="' . esc_url($image_matches[1][$i + 1]) . '" alt="Page Image" style="width: 300px; height: 300px; margin: 5px;"><br>';
+//         $i += 2; 
+//     }
+// }
+// }
+?>
+
 </div>
 </div>
-</body>
 <?php
 get_footer();
 ?>
-</html>
+ 
